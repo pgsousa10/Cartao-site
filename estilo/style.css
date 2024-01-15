@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body { 
+    overflow-x: hidden;
+    font-size: 0.8em;
+    font-family: 'Figtree', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+div.container{
+    width: 100vw;
+    height: 100vh;
+    background: #F6D050;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 250px;
+    height: 350px;
+    background: #fff;
+    border-radius: 15px 15px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.863);
+}
+
+img{
+    border-radius: 10px ;
+    position: absolute;
+    left: 0;
+    right: 0%;
+    bottom: 56%;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;    
+}
+
+.card{
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    top: 43%;
+}
+
+h3{
+    background-color: #F6D050;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: smaller;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+a:hover{
+    color: #c49d1e;
+    cursor: pointer;
+}
+
+p#tipos{
+    text-align: justify;
+    width: 80%;
+    
+}
+
+footer > p{
+    font-style: italic;
+    font-weight: 600;
+    text-align: right;
+    width: 80%;
+}
+
+/* 
+    Dimensões para celulares tabletes, penas arruamado a imagem 
+    Talvez necessario consertar o botão de link HTML e CSS
+*/
+
+@media screen and (max-width: 1280px) {
+    img{
+        bottom: 55%;   
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    img{
+        bottom: 53%;   
+    }
+}
+
+@media screen and (max-width: 912px) {
+    img{
+        bottom: 53%;   
+    }
+}
+
+@media screen and (max-width: 540px) {
+    img{
+        bottom: 55%;   
+    }
+}
+
+@media screen and (max-width: 412px){ 
+    img{
+        bottom: 54%;
+    }
+}
+
+@media screen and (max-width: 280px){ 
+    img{
+        bottom: 56%;
+    }
+}
