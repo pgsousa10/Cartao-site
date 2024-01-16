@@ -4,128 +4,100 @@
     box-sizing: border-box;
 }
 
-html, body { 
-    overflow-x: hidden;
-    font-size: 0.8em;
-    font-family: 'Figtree', sans-serif, Arial, Helvetica, sans-serif;
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --Yellow: hsl(47, 88%, 63%);
 }
 
-div.container{
-    width: 100vw;
-    height: 100vh;
-    background: #F6D050;
+body{
+    font-family: 'Figtree';
+}
+
+.container{
+    min-height: 100vh;
+    background: var(--Yellow);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .box{
-    width: 250px;
-    height: 350px;
     background: #fff;
-    border-radius: 15px 15px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.863);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px;
+    border-radius: 20px;
+    box-shadow: 10px 10px var(--Black);
 }
+
 
 img{
-    border-radius: 10px ;
-    position: absolute;
-    left: 0;
-    right: 0%;
-    bottom: 56%;
-    margin: auto;
-    max-width: 100%;
-    max-height: 100%;    
+    width: 265px;
+    border-radius: 10px;
 }
 
-.card{
-    display: inline-block;
-    position: relative;
-    left: 10%;
-    top: 43%;
-}
+h3, p, h1{
+    margin-top: 10px;
+    font-size: 16px;
+} 
 
 h3{
-    background-color: #F6D050;
-    width: 100px;
-    height: 20px;
-    text-align: center;
+    font-size: 13px;
+    background-color: var(--Yellow);
+    width: 90px;
     border-radius: 5px;
-    font-size: small;
-    font-weight: 600;
-    text-transform: uppercase;
+    padding: 5px;
 }
 
-p{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-style: italic;
-    font-size: smaller;
+h1{
+    font-size: 20px;
 }
 
 a{
     text-decoration: none;
-    color: black;
-    font-size: 2em;
-    font-weight: 900;
+    color: var(--Black);
 }
 
-a:hover{
-    color: #c49d1e;
-    cursor: pointer;
+h1 > a:hover{
+    color: var(--Yellow);
 }
 
-p#tipos{
-    text-align: justify;
-    width: 80%;
+p#par{
+    color: var(--Grey);
     
 }
 
-footer > p{
+.perfil{
+    display: flex;
+    align-items: center;
+}
+
+.perfil > img{
+    margin-top: 15px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+div.perfil > P{
+    font-weight: 900;
+}
+
+footer{
+    font-size: 10px;
+    padding: 20px;
     font-style: italic;
-    font-weight: 600;
-    text-align: right;
-    width: 80%;
 }
 
-/* 
-    Dimensões para celulares tabletes, penas arruamado a imagem 
-    Talvez necessario consertar o botão de link HTML e CSS
-*/
-
-@media screen and (max-width: 1280px) {
-    img{
-        bottom: 55%;   
-    }
+footer > a{
+    color: var(--Grey);
 }
 
-@media screen and (max-width: 1024px) {
-    img{
-        bottom: 53%;   
-    }
-}
-
-@media screen and (max-width: 912px) {
-    img{
-        bottom: 53%;   
-    }
-}
-
-@media screen and (max-width: 540px) {
-    img{
-        bottom: 55%;   
-    }
-}
-
-@media screen and (max-width: 412px){ 
-    img{
-        bottom: 54%;
-    }
-}
-
-@media screen and (max-width: 280px){ 
-    img{
-        bottom: 56%;
-    }
+footer > a:hover{
+    color: var(--Black);
 }
